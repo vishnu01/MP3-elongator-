@@ -3,9 +3,7 @@
  main()
 {   
     /*
-    File_1.txt is the file with content and,
-    File_2.txt is the file in which content of File_1
-    will be copied.
+     two songs named x and y ( in the d drive ) are elongated and copied into the third file named y.mp3
     */
     FILE *fp1, *fp2;
     char ch;
@@ -22,7 +20,7 @@
         fputc(ch, fp2);
     }    
     fclose(fp1);
-    fp1 = fopen("D:/z.mp3","rb");   
+    fp1 = fopen("D:/z.mp3","rb");           
     fseek(fp1,0,SEEK_END);
     pos=ftell(fp1); 
     fseek(fp1,0,SEEK_SET);
