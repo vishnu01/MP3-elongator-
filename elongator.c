@@ -5,7 +5,7 @@
 #include<stdio.h>
 void extend(FILE *fp)
 {
-	FILE *fp2;
+    FILE *fp2;
     char ch;
     int pos; 
     fp2 = fopen("D:/result.mp3", "wb+");
@@ -18,7 +18,7 @@ void extend(FILE *fp)
         ch = fgetc(fp);					// copying file character by character
         fputc(ch, fp2);
     }    
-    fclose(fp);							// closing .mp3
+        fclose(fp);							// closing .mp3
 	fclose(fp2);	
 }
 
@@ -27,8 +27,8 @@ void extend(FILE *fp)
     
     FILE *fp1;
     extend(fp1=fopen("D:/a.mp3","rb"));  
-	fclose(fp1);
-	extend(fp1=fopen("D:/b.mp3","rb"));
-	fclose(fp1);  
+    fclose(fp1);
+    extend(fp1=fopen("D:/b.mp3","rb"));
+    fclose(fp1);  
     return 0;
 }
